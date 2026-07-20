@@ -801,8 +801,8 @@ export default {
 
       const questionWords = question
         .toLowerCase()
-        .replace(/[^\\w\\s-]/g, "")
-        .split(/\\s+/)
+        .replace(/[^\w\s-]/g, "")
+        .split(/\s+/)
         .filter(function (word) {
           return word.length > 2;
         });
