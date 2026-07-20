@@ -312,6 +312,8 @@ Additional enterprise knowledge articles can be added without changing applicati
 
 ## Employee Portal
 
+https://internal-it-assistant.zoheb0885.workers.dev
+
 Functions:
 
 - Ask IT questions
@@ -323,6 +325,7 @@ Functions:
 
 ## Admin Portal
 
+https://internal-it-assistant.zoheb0885.workers.dev/admin
 Functions:
 
 - View knowledge articles
