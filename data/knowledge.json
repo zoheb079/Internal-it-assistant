@@ -1,0 +1,74 @@
+[
+  {
+    "key": "helpdesk-hours",
+    "title": "IT Help Desk Hours",
+    "category": "Support",
+    "keywords": [
+      "helpdesk",
+      "support",
+      "hours",
+      "contact"
+    ],
+    "content": "The IT help desk is available Monday through Friday from 8:00 AM to 6:00 PM."
+  },
+  {
+    "key": "vpn-access",
+    "title": "VPN Access Request",
+    "category": "Access",
+    "keywords": [
+      "vpn",
+      "remote access",
+      "manager approval",
+      "mfa"
+    ],
+    "content": "Employees can request VPN access through the IT service portal. Manager approval and completion of multi-factor authentication enrollment are required."
+  },
+  {
+    "key": "password-reset",
+    "title": "Password Reset",
+    "category": "Account Support",
+    "keywords": [
+      "password",
+      "reset",
+      "locked account",
+      "self-service"
+    ],
+    "content": "To reset your password, use the self-service password portal. If your account is locked or you cannot complete verification, contact the IT help desk."
+  },
+  {
+    "key": "software-request",
+    "title": "Software Installation Request",
+    "category": "Software",
+    "keywords": [
+      "software",
+      "installation",
+      "request",
+      "approval"
+    ],
+    "content": "Submit software installation requests through the IT service portal. Include the software name, business justification, device name, and manager approval when required."
+  },
+  {
+    "key": "servicenow-ticket",
+    "title": "Create a ServiceNow Ticket",
+    "category": "Support",
+    "keywords": [
+      "servicenow",
+      "ticket",
+      "incident",
+      "request"
+    ],
+    "content": "To create a ServiceNow ticket, open the IT service portal, select the appropriate incident or request category, provide a clear description, add any relevant screenshots, and submit the form."
+  },
+  {
+    "key": "new-employee-access",
+    "title": "New Employee Access",
+    "category": "Onboarding",
+    "keywords": [
+      "new employee",
+      "onboarding",
+      "access",
+      "accounts"
+    ],
+    "content": "New employee access requests should be submitted by the hiring manager before the employee's start date. The request should include required applications, shared drives, distribution lists, and any privileged access."
+  }
+]

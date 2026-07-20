@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+
+  "name": "internal-it-assistant",
+
+  "main": "src/index.js",
+
+  "compatibility_date": "2026-07-01",
+
+
+  "kv_namespaces": [
+    {
+      "binding": "INTERNAL_IT_KNOWLEDGE",
+      "id": "3e7a983e8354439c85d0805dfb841e09"
+    }
+  ],
+  "ai": {
+  "binding": "AI"
+  }
+}

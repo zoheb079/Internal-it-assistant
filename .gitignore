@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+
+# Cloudflare local development state
+.wrangler/
+
+# Local environment and secrets
+.dev.vars
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# VS Code local settings
+.vscode/
+
+# Generated KV bulk upload file
+data/knowledge.bulk.json
