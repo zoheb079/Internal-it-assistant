@@ -316,255 +316,255 @@ export default {
     // =========================================================
     // ADMIN PAGE
     // =========================================================
-//     if (
-//       request.method === "GET" &&
-//       url.pathname === "/admin"
-//     ) {
-//       return new Response(
-//         `<!DOCTYPE html>
-// <html lang="en">
-// <head>
-//   <meta charset="UTF-8">
+    if (
+      request.method === "GET" &&
+      url.pathname === "/admin"
+    ) {
+      return new Response(
+        `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
-//   <meta
-//     name="viewport"
-//     content="width=device-width, initial-scale=1.0"
-//   >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-//   <title>Knowledge Base Admin</title>
+  <title>Knowledge Base Admin</title>
 
-//   <style>
-//     * {
-//       box-sizing: border-box;
-//     }
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-//     body {
-//       margin: 0;
-//       padding: 30px 20px;
-//       font-family: Arial, sans-serif;
-//       background: #f4f6f8;
-//     }
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
 
-//     .container {
-//       max-width: 1000px;
-//       margin: auto;
-//     }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
 
-//     .header {
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       gap: 20px;
-//       margin-bottom: 25px;
-//     }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
 
-//     h1 {
-//       margin: 0 0 8px;
-//     }
+    h1 {
+      margin: 0 0 8px;
+    }
 
-//     .subtitle {
-//       margin: 0;
-//       color: #666;
-//     }
+    .subtitle {
+      margin: 0;
+      color: #666;
+    }
 
-//     .chat-link {
-//       text-decoration: none;
-//       background: #1a73e8;
-//       color: white;
-//       padding: 11px 18px;
-//       border-radius: 8px;
-//     }
+    .chat-link {
+      text-decoration: none;
+      background: #1a73e8;
+      color: white;
+      padding: 11px 18px;
+      border-radius: 8px;
+    }
 
-//     .chat-link:hover {
-//       background: #1557b0;
-//     }
+    .chat-link:hover {
+      background: #1557b0;
+    }
 
-//     .summary {
-//       margin-bottom: 20px;
-//       color: #555;
-//     }
+    .summary {
+      margin-bottom: 20px;
+      color: #555;
+    }
 
-//     .article {
-//       background: white;
-//       margin-bottom: 16px;
-//       padding: 22px;
-//       border-radius: 12px;
-//       box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-//     }
+    .article {
+      background: white;
+      margin-bottom: 16px;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
 
-//     .article h2 {
-//       margin: 0 0 8px;
-//     }
+    .article h2 {
+      margin: 0 0 8px;
+    }
 
-//     .metadata {
-//       margin-bottom: 14px;
-//       font-size: 13px;
-//       color: #666;
-//     }
+    .metadata {
+      margin-bottom: 14px;
+      font-size: 13px;
+      color: #666;
+    }
 
-//     .content {
-//       line-height: 1.6;
-//       white-space: pre-wrap;
-//     }
+    .content {
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
 
-//     .keywords {
-//       margin-top: 15px;
-//     }
+    .keywords {
+      margin-top: 15px;
+    }
 
-//     .keyword {
-//       display: inline-block;
-//       margin: 4px 5px 0 0;
-//       padding: 5px 9px;
-//       border-radius: 20px;
-//       background: #e8f0fe;
-//       font-size: 12px;
-//     }
+    .keyword {
+      display: inline-block;
+      margin: 4px 5px 0 0;
+      padding: 5px 9px;
+      border-radius: 20px;
+      background: #e8f0fe;
+      font-size: 12px;
+    }
 
-//     .status {
-//       background: white;
-//       padding: 20px;
-//       border-radius: 12px;
-//     }
+    .status {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+    }
 
-//     @media (max-width: 650px) {
-//       .header {
-//         align-items: flex-start;
-//         flex-direction: column;
-//       }
-//     }
-//   </style>
-// </head>
+    @media (max-width: 650px) {
+      .header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
 
-// <body>
-//   <div class="container">
-//     <div class="header">
-//       <div>
-//         <h1>Knowledge Base Admin</h1>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1>Knowledge Base Admin</h1>
 
-//         <p class="subtitle">
-//           View articles currently used by the IT assistant.
-//         </p>
-//       </div>
+        <p class="subtitle">
+          View articles currently used by the IT assistant.
+        </p>
+      </div>
 
-//       <a class="chat-link" href="/">
-//         Open Assistant
-//       </a>
-//     </div>
+      <a class="chat-link" href="/">
+        Open Assistant
+      </a>
+    </div>
 
-//     <div id="summary" class="summary">
-//       Loading knowledge articles...
-//     </div>
+    <div id="summary" class="summary">
+      Loading knowledge articles...
+    </div>
 
-//     <div id="articles"></div>
-//   </div>
+    <div id="articles"></div>
+  </div>
 
-//   <script>
-//     function escapeHtml(value) {
-//       return String(value || "")
-//         .replaceAll("&", "&amp;")
-//         .replaceAll("<", "&lt;")
-//         .replaceAll(">", "&gt;")
-//         .replaceAll('"', "&quot;")
-//         .replaceAll("'", "&#039;");
-//     }
+  <script>
+    function escapeHtml(value) {
+      return String(value || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
 
-//     async function loadArticles() {
-//       const summary =
-//         document.getElementById("summary");
+    async function loadArticles() {
+      const summary =
+        document.getElementById("summary");
 
-//       const articlesContainer =
-//         document.getElementById("articles");
+      const articlesContainer =
+        document.getElementById("articles");
 
-//       try {
-//         const response =
-//           await fetch("/api/articles");
+      try {
+        const response =
+          await fetch("/api/articles");
 
-//         const data =
-//           await response.json();
+        const data =
+          await response.json();
 
-//         if (!response.ok) {
-//           throw new Error(
-//             data.error ||
-//             "Unable to load articles."
-//           );
-//         }
+        if (!response.ok) {
+          throw new Error(
+            data.error ||
+            "Unable to load articles."
+          );
+        }
 
-//         summary.textContent =
-//           data.count +
-//           " knowledge article(s) available.";
+        summary.textContent =
+          data.count +
+          " knowledge article(s) available.";
 
-//         if (data.articles.length === 0) {
-//           articlesContainer.innerHTML =
-//             '<div class="status">' +
-//             "No articles found." +
-//             "</div>";
+        if (data.articles.length === 0) {
+          articlesContainer.innerHTML =
+            '<div class="status">' +
+            "No articles found." +
+            "</div>";
 
-//           return;
-//         }
+          return;
+        }
 
-//         articlesContainer.innerHTML =
-//           data.articles
-//             .map(function (article) {
-//               const keywords =
-//                 (article.keywords || [])
-//                   .map(function (keyword) {
-//                     return (
-//                       '<span class="keyword">' +
-//                       escapeHtml(keyword) +
-//                       "</span>"
-//                     );
-//                   })
-//                   .join("");
+        articlesContainer.innerHTML =
+          data.articles
+            .map(function (article) {
+              const keywords =
+                (article.keywords || [])
+                  .map(function (keyword) {
+                    return (
+                      '<span class="keyword">' +
+                      escapeHtml(keyword) +
+                      "</span>"
+                    );
+                  })
+                  .join("");
 
-//               return (
-//                 '<div class="article">' +
+              return (
+                '<div class="article">' +
 
-//                 "<h2>" +
-//                 escapeHtml(article.title) +
-//                 "</h2>" +
+                "<h2>" +
+                escapeHtml(article.title) +
+                "</h2>" +
 
-//                 '<div class="metadata">' +
-//                 "Key: " +
-//                 escapeHtml(article.key) +
-//                 " | Category: " +
-//                 escapeHtml(article.category) +
-//                 "</div>" +
+                '<div class="metadata">' +
+                "Key: " +
+                escapeHtml(article.key) +
+                " | Category: " +
+                escapeHtml(article.category) +
+                "</div>" +
 
-//                 '<div class="content">' +
-//                 escapeHtml(article.content) +
-//                 "</div>" +
+                '<div class="content">' +
+                escapeHtml(article.content) +
+                "</div>" +
 
-//                 '<div class="keywords">' +
-//                 keywords +
-//                 "</div>" +
+                '<div class="keywords">' +
+                keywords +
+                "</div>" +
 
-//                 "</div>"
-//               );
-//             })
-//             .join("");
-//       } catch (error) {
-//         summary.textContent =
-//           "Unable to load articles.";
+                "</div>"
+              );
+            })
+            .join("");
+      } catch (error) {
+        summary.textContent =
+          "Unable to load articles.";
 
-//         articlesContainer.innerHTML =
-//           '<div class="status">' +
-//           escapeHtml(error.message) +
-//           "</div>";
-//       }
-//     }
+        articlesContainer.innerHTML =
+          '<div class="status">' +
+          escapeHtml(error.message) +
+          "</div>";
+      }
+    }
 
-//     loadArticles();
-//   </script>
-// </body>
-// </html>`,
-//         {
-//           headers: {
-//             "Content-Type":
-//               "text/html; charset=UTF-8"
-//           }
-//         }
-//       );
-//     }
+    loadArticles();
+  </script>
+</body>
+</html>`,
+        {
+          headers: {
+            "Content-Type":
+              "text/html; charset=UTF-8"
+          }
+        }
+      );
+    }
 
     // =========================================================
     // HEALTH ENDPOINT
